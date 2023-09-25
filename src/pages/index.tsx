@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import ConnectButton from '@/components/wallets/ConnectButton'
 import TokenButton from '@/components/blockchain/TokenButton'
 import { Hydrate } from '@/components/utils/Hydrate'
 
@@ -15,7 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         Hello Web3
-        <ConnectButton/>
+        <w3m-button/>
         <Hydrate>
           <TokenButton/>
         </Hydrate>
