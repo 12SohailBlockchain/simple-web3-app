@@ -5,7 +5,7 @@ import { tokenAbi } from '@/abis/tokenAbi'
 import toast, { Toaster } from 'react-hot-toast';
 import { useWaitForTransaction } from 'wagmi'
 
-const tokenAddress = '0x1fe84fE4e1ae96F9b202188f7a6835dB3D27a264'
+const tokenAddress = '0x05049E822f3b978ceD140C9A8f2B4d158572AF42'
 const TokenButton = () => {
 
   const { address } = useAccount()
