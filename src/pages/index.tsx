@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        Hello Web3
+        Hello Web3 Project Interaction with Frontend and Backends
         <w3m-button/>
         <Hydrate>
           <TokenButton/>

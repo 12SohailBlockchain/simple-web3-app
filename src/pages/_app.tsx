@@ -3,13 +3,16 @@ import type { AppProps } from 'next/app'
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi/react'
 
 import { WagmiConfig } from 'wagmi'
-import { bsc, goerli, mainnet, polygon } from 'wagmi/chains'
+import { mainnet,bsc, polygon,bscTestnet,optimism, base,avalanche,polygonZkEvm, goerli,sepolia,polygonMumbai,avalancheFuji,fantomTestnet, arbitrumGoerli,
+  baseGoerli,polygonZkEvmTestnet,optimismGoerli,telosTestnet,arbitrum
+} from 'wagmi/chains'
 
 // 1. Get projectId
-const projectId = 'cdbd18f9f96172be74c3e351ce99b908'
+const projectId = 'ccab91ea8a4b1fd79836263a3f7ab7b6'
 
 // 2. Create wagmiConfig
-const chains = [mainnet, goerli, bsc, polygon]
+const chains = [mainnet,bsc, polygon, arbitrum,optimism, base, avalanche, polygonZkEvm,sepolia ,goerli,polygonMumbai,avalancheFuji,fantomTestnet,arbitrumGoerli,
+  optimismGoerli,polygonZkEvmTestnet,baseGoerli,bscTestnet]
 const wagmiConfig = defaultWagmiConfig({ chains, projectId, appName: 'Web3Modal' })
 
 // 3. Create modal
@@ -23,3 +26,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </WagmiConfig>
   )
 }
+
+
